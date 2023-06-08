@@ -1,0 +1,112 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <center>
+  <h1>Hava Durumu</h1>
+  <h2>Lütfen Hava Durumunu Öğrenmek İstediğiniz Şehiri Yazınız.</h2>
+
+
+  <select id="language">
+    <option value="1">Türkçe</option>
+    <option value="2">İngilizce</option>
+    <option value="3">Fransızca</option>
+  </select>
+
+  <form id="sehirAdı">
+    <input type="text" id="sehir" placeholder="Sehir adını GİRİNİZ!" onfocus="this.value =``" />
+
+    <button type="submit" id="araBtn">Hava Durumunu Gör</button>
+    
+      
+  
+
+  </form>
+  <div class="container">
+  </div>
+</center>
+</head>
+
+<body>
+
+<style >
+  .content {
+    background-color: orangered;
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    margin: 7px;
+
+  }
+
+  html {
+    background-image: url("ff.jpg");
+    background-repeat: round;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding-top: 66, 64%;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+
+  }
+
+  div {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+
+  }
+  
+
+  button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: auto;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: aliceblue;
+    height: 50px;
+
+  }
+  select {
+    position: relative;
+    left: 150px;
+    width: 223px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: auto;
+    background-color: transparent;
+    color: aliceblue;
+
+  }
+  option{
+    background-color: lightgreen;
+  }
+
+  input {
+    font-size: 25px;
+    font-style: italic;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: aliceblue;
+
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./ajax.js"></script>
+
+
+</body>
